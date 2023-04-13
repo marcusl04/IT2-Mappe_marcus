@@ -1,0 +1,263 @@
+
+/*-------------kode til index----------------*/
+.colori{
+    color: #45B8AC;
+}
+
+.inp1{
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 10px;
+}
+.inp2{
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 10px;
+}
+.inp3{
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 10px;
+}
+
+/*------------kode til slideshow-----------*/
+.imgs{
+    max-width: 100%;
+    height: 100%;
+}
+
+.slideshow{
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.middle{
+    border: solid black;
+}
+
+.bildenav{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.bar:hover{
+    background: #fff;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slide{
+    width: 20%;
+    transition: 0.6s;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+#r2:checked ~ .s1{
+    margin-left: -20%;
+}
+#r3:checked ~ .s1{
+    margin-left: -40%;
+}
+#r4:checked ~ .s1{
+    margin-left: -60%;
+}
+#r5:checked ~ .s1{
+    margin-left: -80%;
+}
+
+
+/*---------------kode til sharks---------------*/
+
+.shark{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+}
+
+img{
+    max-width: 90%;
+    height: 90%;
+}
+
+
+#abba{
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+
+hr{
+    border: solid 2px #45B8AC;
+    background-color: #45B8AC;
+ }
+
+
+
+/*----------------------*/
+.glow-on-hover {
+    width: 300px;
+    height: 60px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-left: 200px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/*-------------------kode til shark----------------------*/
+
+.pic{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.colors{
+    color: #45B8AC;
+}
+
+
+
+/*--------------------------kode til chart-------------------*/
+
+.chartp{
+    margin-top: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+.chartp2{
+    margin-top: 20px;
+}
+.chartp3{
+    margin-top: 20px;
+}
+
+.colorc{
+    color: #45B8AC;
+}
+
+/*--------------kode til about-----------------*/
+.colora{
+    color: #45B8AC;
+}
+
+.aboutp{
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.pic3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+/*---------------------favoritter-----------------*/
+#buts{
+    margin-left: 20px;
+    background-color: gray;
+    color: white;
+    border-color: ghostwhite;
+}
+
+#deleteb{
+    color: #002bff;
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+
+#lif{
+    margin-left: 20px;
+    list-style: none;
+    color: #45B8AC;
+    text-decoration: none;
+}

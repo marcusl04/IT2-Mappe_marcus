@@ -1,0 +1,19 @@
+{% extends "mal.html" %}
+
+
+{% block innhold %}
+    <h1>Favorites</h1>
+
+    <ul>
+        {% for favorite in favorites %}
+            <li>
+                <a id="lif" href="/shark/{{favorite}}">
+                {{sharks[favorite]["Name"]}}
+            </a>
+            <form id="deleteb" action="/favorites/delete/{{favorite}}">
+                <button type="submit">X</button>
+            </form>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

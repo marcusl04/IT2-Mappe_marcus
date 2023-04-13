@@ -1,0 +1,38 @@
+{
+    "White": {
+        "Name": "Great White shark",
+        "Alive": "3 500 wild",
+        "Location": "Off the coasts of the northeastern and western United States, Chile, northern Japan, southern Australia, New Zealand, southern Africa, and the Mediterranean.",
+        "Picture":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Great_white_shark_south_africa.jpg/800px-Great_white_shark_south_africa.jpg",
+        "Description":"White sharks are large bulky fishes with a body shaped like a blunt torpedo. They have a sharply pointed conical snout, large pectoral and dorsal fins, and a strong crescent-shaped tail. Only the belly of white sharks is whitish. They have a contrasting pattern of dark blue, gray, or brown on their back and sides."
+    },
+    "Hammer": {
+        "Name": "Hammerhead shark",
+        "Alive": "200 wild",
+        "Location": "All tropical waters",
+        "Picture":"https://www.thoughtco.com/thmb/vuXVX1M889A7IImYVwAD1ZVns3E=/2892x1627/smart/filters:no_upscale()/hammerhead-shark-151080961-5b202eba8023b900362a44ff.jpg",
+        "Description":"Hammerhead shark, Any of the swift, powerful sharks in the family Sphyrnidae, having a broad, flattened, hammer- or spade-shaped head, with the eyes and nostrils at the ends of the sidewise projections. Widely distributed in all oceans, in warm and temperate waters, they feed on fish, stingrays, skates, and other sharks. Some species are fished for leather and oil."
+    },
+    "Whale": {
+        "Name": "Whale shark",
+        "Alive": "119 000 - 238 000 wild",
+        "Location": "Tropical oceans",
+        "Picture":"https://u4d2z7k9.rocketcdn.me/wp-content/uploads/2022/02/Untitled-design-2022-02-07T145557.876.jpg",
+        "Description":"Often growing to 40 feet or more, the mysterious whale shark is the largest living fish! Despite their name, whale sharks are not whales, they are actually fish. Their name comes from their huge size. Often growing to 40 feet long or more, the whale shark is a fish that is about the size of a large school bus. These sharks are filter feeders, like many whales, and live on a diet of plankton and tiny krill or small fish. Whale sharks are generally peaceful fish and have been known to allow divers to hang onto their dorsal fins for a ride."
+    },
+    "Basking": {
+        "Name": "Basking shark",
+        "Alive": "10 000 wild",
+        "Location": "In the western Atlantic, it ranges from Newfoundland to Florida and southern Brazil to Argentina and from Iceland and Norway to Senegal, including the parts of the Mediterranean in the eastern Atlantic.",
+        "Picture":"https://animals.net/wp-content/uploads/2016/11/Basking-Shark-3-650x425.jpg",
+        "Description":"Basking sharks, also known as bone sharks, may have an intimidating appearance and massive size that could easily frighten nearby swimmers or divers, but they are essentially harmless as far as humans and aquatic animals are concerned. Much like whales, these sharks feed on plankton and other tiny life forms by filtering vast amounts of ocean water through their mouths. They routinely cruise or even float along the surface with their mouths hanging open as they gather food. They are the second-largest known shark species and one of only three sharks that rely on plankton as a food source."
+    },
+    "Tiger": {
+        "Name": "Tiger shark",
+        "Alive": "Unkown",
+        "Location": "The east coast from Cape Cod to Florida and in the Gulf of Mexico and on the west coast from California southward.",
+        "Picture":"https://cff2.earth.com/uploads/2021/10/01123046/Tiger-sharks-960x640.jpg",
+        "Description":"Tiger sharks are aggressive predators, famous for eating just about anything they find or are able to capture. They have been known to eat many different fishes and invertebrates, seabirds, sea turtles, some marine mammals, stingrays and other rays, smaller sharks, sea snakes, and scavenged dead animals, among other things. Several tiger sharks have been known to eat garbage, including metal, plastic, wood, fishing gear, and other trash."
+    }
+
+}

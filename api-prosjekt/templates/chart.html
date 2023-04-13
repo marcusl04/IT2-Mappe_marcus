@@ -1,0 +1,56 @@
+{% extends "mal.html" %}
+
+
+{% block innhold %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+   integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+   crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+crossorigin=""></script>
+<div class="colorc">
+<h1>How does the chart work?</h1>
+<div class="chartp">
+    <div>
+<p class="chartp1"> Sharktastic conducts research expeditions aboard the M/V SHARKTASTIC, which serves as an at-sea laboratory. 
+    The M/V SHARKTASTIC contains a 75,000 lb. capacity hydraulic platform designed to safely lift marine animals 
+    out of the ocean for access by a multi-disciplined research team.
+</p>
+</div>
+<div class="chartp2">
+<p>
+    Animals are caught from tenders, using handlines, and are guided by hand in the water on and off the lift. 
+    The animals are then brought to the submerged platform of the M/V SHARKTASTIC vessel and the platform is raised. 
+    Once the animals are restrained and hoses of water have been set to enable a continuous flow of fresh seawater over 
+    the gills, the science team, made up of researchers and veterinarians, begins its process. Tags such as SPOT, acoustic, 
+    and accelerometer are attached, morphometrics are recorded, and samples, such as blood and tissue, are collected.
+</p>
+</div>
+<div>
+<p class="chartp3">Under is a live chart with all the sharks we have tagged who are still alive.</p>
+</div>
+</div>
+</div>
+<div id="map"></div>
+
+<script>
+    const token = "pk.eyJ1IjoibWFyY3VzMjk5NiIsImEiOiJjbGVyMjh4cnowczZ1M3JwNHhzenc2YWhuIn0.9SloIEVKiOhcdVJItcL19A"
+    const map = L.map('map').setView([51.505, -0.09], 2);
+
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: token
+}).addTo(map);
+{% for shark in chart %}
+    L.marker([{{shark["geometry"]["coordinates"][1]}}, {{shark["geometry"]["coordinates"][0]}}], {
+        title: "{{shark["properties"]["name"]}}"
+    }) .addTo(map);
+{% endfor %}
+   
+</script>
+
+{% endblock %}

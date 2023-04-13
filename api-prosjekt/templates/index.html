@@ -1,0 +1,59 @@
+{% extends "mal.html" %}
+
+{% block innhold %}
+
+<div class="colori">
+    <h1 class="h1i">Home</h1>
+
+    <p class="inp1">
+        With fossil records dating back 400 million years, sharks have outlived the dinosaurs and many other forms of life currently on earth. 
+        There are more than 1,000 species of sharks and rays, with new species discovered every year. </p>
+    <p class="inp2">
+        These majestic top predators that are so essential to the natural order of marine ecosystems now face their most severe threat from overfishing. 
+        Many species are threatened with extinction, with some families of rays such as sawfishes in peril. 
+        While sharks and rays have been an irreplaceable resource for coastal communities in the developing world for centuries, 
+        this unique balance is in danger of being lost forever.
+    </p>
+        
+    <p class="inp3">
+        With our oceans severely degraded, restoring sharks is key to improving the resilience of these water bodies to climate change. 
+        While sharks' diverse range of species adds complexity to our conservation efforts, the dwindling numbers of these amazing 
+        creatures from overfishing and demand for their fins and meat increases the urgency of the task. 
+        Through our multi-pronged strategies, and guided by the Global Priorities for Conserving Sharks and Rays - 
+        A 2015-2025 Strategy, we strive to restore the balance between humans and sharks.   
+    </p>  
+</div>
+   
+    <div class="slideshow middle">
+
+        <div class="slides">
+            <input type="radio" name="r" id="r1" checked>
+            <input type="radio" name="r" id="r2" >
+            <input type="radio" name="r" id="r3" >
+            <input type="radio" name="r" id="r4" >
+            <input type="radio" name="r" id="r5" >
+            <div class="slide s1">
+                <img class="imgs" src='{{url_for("static", filename="bilder/Slide1.webp")}}' alt="">
+            </div>
+            <div class="slide">
+                <img class="imgs" src='{{url_for("static", filename="bilder/Slide2.webp")}}' alt="">
+            </div>
+            <div class="slide">
+                <img class="imgs" src='{{url_for("static", filename="bilder/Slide3.jpg")}}' alt="">
+            </div>
+            <div class="slide">
+                <img class="imgs" src='{{url_for("static", filename="bilder/Slide4.webp")}}' alt="">
+            </div>
+            <div class="slide">
+                <img class="imgs" src='{{url_for("static", filename="bilder/Slide5.jpg")}}' alt="">
+            </div>
+        </div>
+        <div class="bildenav">
+            <label for="r1" class="bar"></label>
+            <label for="r2" class="bar"></label>
+            <label for="r3" class="bar"></label>
+            <label for="r4" class="bar"></label>
+            <label for="r5" class="bar"></label>
+        </div>
+    </div>
+{% endblock %}

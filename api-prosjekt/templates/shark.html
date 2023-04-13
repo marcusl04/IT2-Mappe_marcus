@@ -1,0 +1,34 @@
+{% extends "mal.html" %}
+
+{% block innhold %}
+
+<div class="colors">
+    <h1>{{shark["Name"]}}</h1>
+
+    <form action="/shark/{{id}}/add-to">
+        <button id="buts" type="submit">Add to favorite</button>
+    </form>
+
+    <div class="grid">
+
+    <div class="info">
+        <p>Alive: {{shark["Alive"]}}</p>
+        <p>Location: {{shark["Location"]}}</p>
+    </div>
+    
+    <div class="description">
+       <p>Description: {{shark["Description"]}}</p> 
+    </div>
+
+    
+</div>
+<div class="pic">
+    <img src='{{shark["Picture"]}}' alt="">
+</div>
+</div>
+{% endblock %}
+
+
+
+
+

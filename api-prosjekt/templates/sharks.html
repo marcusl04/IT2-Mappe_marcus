@@ -1,0 +1,26 @@
+{% extends "mal.html" %}
+
+{% block innhold %}
+    <h1>Sharks</h1>
+
+    <div class="sharks">
+        {% for id, sharks in sharks.items() %}
+            <div class="shark">
+                <a id="abba" href="/shark/{{id}}">
+                    <h2 class="glow-on-hover" type="button">{{sharks["Name"]}}</h2>
+                </a>
+                <img id="imgs" src='{{sharks["Picture"]}}' alt="">
+                <hr>
+                <hr>
+            </div>
+        
+        {% endfor %}
+
+    </div>
+
+ 
+    
+
+    <hr>
+
+{% endblock %}

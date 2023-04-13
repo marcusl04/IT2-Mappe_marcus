@@ -1,0 +1,15 @@
+{% extends "mal.html" %}
+
+{% block innhold %}
+<div class="colora">
+    <h1>What is Sharktastic?</h1>
+
+ <p class="aboutp"> Sharktastic is a global non-profit organization conducting unprecedented research on our ocean's giants in order to help scientists collect previously unattainable data in the ocean. Our mission is to accelerate the ocean's return to balance and abundance through fearless innovations in critical scientific research, education, outreach, and policy using unique collaborations of individuals and organizations in the U.S and abroad.</p>
+
+ <div class="pic3">
+    <img src='{{url_for("static", filename="bilder/cage.jpg")}}' alt="">
+    <img src='{{url_for("static", filename="bilder/hurt.jpg")}}' alt="">
+    <img src='{{url_for("static", filename="bilder/sad.webp")}}' alt="">
+ </div>
+</div>
+{% endblock %}
